@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Scanner Barcode Absensi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h2>Scan Barcode Mahasiswa</h2>
+
+<div class="camera-box">
+    <video id="camera" autoplay playsinline></video>
+    <div class="scan-area"></div>
+</div>
+
+<p id="status" class="status">Status: Menunggu scan...</p>
+
+<!-- Tombol Upload -->
+<div class="upload-box">
+    <input type="file" id="uploadInput" accept="image/*">
+</div>
+
+<!-- Preview gambar upload -->
+<img id="preview" class="preview hidden">
+
+<div id="result-box" class="result-box hidden">
+    <h3>Data Mahasiswa</h3>
+    
+    <p><strong>Nama:</strong> <span id="nama">-</span></p>
+    <p><strong>NIM:</strong> <span id="nim">-</span></p>
+    <p><strong>Kelas:</strong> <span id="kelas">-</span></p>
+    <p><strong>Kode Barcode:</strong> <span id="kode">-</span></p>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
